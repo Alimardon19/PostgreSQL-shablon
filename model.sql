@@ -17,3 +17,12 @@ INSERT INTO students(student_name, student_password) VALUES('Bilol', 'user123');
 
 SELECT student_name from students; -- Table dan malumot ni tanlab olish. 
 SELECT * from students; -- Table dan hamma malumotni olish.
+
+
+-- Postresql table da malumot bitta malumotni tanlab o'qib olish.
+
+SELECT * from uz_auto where auto_model = 'Nexia';  -- Bitta malumotni tanlab o'qib olish.
+
+DELETE from uz_auto where id = 2;  -- Bitta tanlangan malumotni o'chirib tashlash.
+
+DELETE from uz_auto; -- Table dan hamma malumot o'chirib tanlash.
